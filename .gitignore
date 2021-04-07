@@ -13,7 +13,6 @@
 /.env.local.php
 /.env.*.local
 !/app/config/local
-/app/config/local/*
 !app/config/local/.gitkeep
 
 # pimcore legacy (remove this for your own development)
