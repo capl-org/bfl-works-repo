@@ -1,6 +1,8 @@
 # remove the following ignores for your project
 /app/constants.php
 
+ 
+
 # symfony default
 /.web-server-pid
 /app/config/parameters.yml
@@ -8,12 +10,17 @@
 /phpunit.xml
 /web/bundles/
 
+ 
+
 # local config
 /.env.local
 /.env.local.php
 /.env.*.local
 !/app/config/local
+/app/config/local/*
 !app/config/local/.gitkeep
+
+ 
 
 # pimcore legacy (remove this for your own development)
 !/legacy
@@ -21,35 +28,57 @@
 !legacy/.gitkeep
 !legacy/bundle
 
+ 
+
 /var/*
 !/var/.gitkeep
 !/var/classes/
-/var/classes/DataObject
+
+ 
 
 !/var/config
 /var/config/system.yml
 /var/config/debug-mode.php
 /var/config/maintenance.php
 
+ 
+
 # project specific recommendations
 /var/config/tag-manager.php
 /var/config/reports.php
 
+ 
+
+# cache, log, recycle bin
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+
+ 
 
 /web/var/
 /web/sitemap*.xml
+
+ 
 
 # PHP-CS-Fixer
 /.php_cs
 /.php_cs.cache
 
-# composer
-/vendor/
+ 
+
+# composer.local.json is referenced in composer-merge-plugin
+# remove this for your projects if you want to track the file
+/composer.local.json
+
+ 
 
 # PhpStorm / IDEA
 .idea
 # NetBeans
 nbproject
+
+ 
 
 # keep legacy paths ignored for easier migration
 /plugins/
